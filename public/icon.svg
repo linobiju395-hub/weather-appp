@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="70%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.25" />
+
+  <!-- Glowing Sun -->
+  <circle cx="330" cy="180" r="70" fill="url(#sunGrad)" filter="url(#glow)" opacity="0.9" />
+
+  <!-- Cloud -->
+  <path d="M 160 350 L 370 350 C 408 350 436 322 436 286 C 436 254 412 228 382 224 C 378 175 336 136 284 136 C 242 136 206 162 192 198 C 183 194 172 192 160 192 C 122 192 90 222 90 260 C 90 310 120 350 160 350 Z" 
+        fill="url(#cloudGrad)" />
+
+  <!-- Lightning / Rain Accents -->
+  <path d="M 230 360 L 210 410 L 246 410 L 222 460 L 272 400 L 242 400 Z" 
+        fill="url(#boltGrad)" />
+</svg>

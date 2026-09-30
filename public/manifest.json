@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "AetherCast Pro Weather",
+  "short_name": "AetherCast",
+  "description": "Professional 24/7 real-time weather station with live atmospheric radar, dynamic animated conditions, customizable API proxy, and background notifications.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#080c14",
+  "theme_color": "#090d16",
+  "categories": ["weather", "utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

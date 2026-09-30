@@ -1,0 +1,9 @@
+{
+  "name": "AetherCast Pro Weather",
+  "description": "Professional 24/7 real-time weather station with live atmospheric radar, dynamic animated conditions, customizable API proxy, and background notifications.",
+  "requestFramePermissions": [
+    "geolocation",
+    "notifications"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
